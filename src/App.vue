@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import ei from './components/Ei.vue'
+import Ei from './components/Ei.vue'
 
 export default {
   name: 'App',
   components: {
-    ei,
+    Ei,
   }
 }
 </script>

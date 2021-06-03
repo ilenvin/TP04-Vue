@@ -1,8 +1,26 @@
+<template>
+    <div id="hexagon"><Heart></Heart></div>
+</template>
+
+<script>
+import { Heart } from 'Heart.vue'
+
+export default {
+    name: 'hexagon',
+    props: {
+   
+    },
+    components: {
+        Heart,
+    }
+}
+</script>
+
 <style scoped>
 #hexagon {
     width: 100px;
     height: 57.735px;
-    background: red;
+    background: rgb(118, 191, 240);
     position: relative;
 }
 #hexagon::before {

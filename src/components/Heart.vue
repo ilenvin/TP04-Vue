@@ -1,3 +1,16 @@
+<template>
+    <div id="heart"></div>
+</template>
+
+<script>
+export default {
+    name: 'heart',
+    props: {
+   
+    }
+}
+</script>
+
 <style scoped>
     #heart {
         position: relative;
@@ -12,7 +25,7 @@
         top: 0;
         width: 50px;
         height: 80px;
-        background: red;
+        background: rgb(247, 121, 198);
         border-radius: 50px 50px 0 0;
         transform: rotate(-45deg);
         transform-origin: 0 100%;

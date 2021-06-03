@@ -1,14 +1,14 @@
 <template>
-  <Main></Main>
+  <Ei></Ei>
 </template>
 
 <script>
-import main from './components/Main.vue'
+import ei from './components/Ei.vue'
 
 export default {
   name: 'App',
   components: {
-    main
+    ei,
   }
 }
 </script>

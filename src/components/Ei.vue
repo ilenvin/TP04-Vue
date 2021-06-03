@@ -10,9 +10,9 @@
 //import { defineComponent } from '@vue/composition-api'
 
 export default {
-    name: 'main',
+    name: 'ei',
     props: {
-    
+        
     }
 }
 </script>
@@ -20,6 +20,6 @@ export default {
 <style scoped>
 #root {
     border: 1px solid black;
-    color: rgb(135, 185, 241);
+    background-color: rgb(135, 185, 241);
 }
 </style>

@@ -9,7 +9,7 @@
 
 <script>
 //import { defineComponent } from '@vue/composition-api'
-import Triangle from '.Triangle.vue'
+import Triangle from './Triangle.vue'
 
 export default {
     name: 'ei',
@@ -24,7 +24,9 @@ export default {
 
 <style scoped>
 #root {
-    border: 1px solid black;
+    width: 80%;
+    height: 30em;
+    border: 3px solid black;
     background-color: rgb(135, 185, 241);
 }
 </style>

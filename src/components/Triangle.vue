@@ -4,14 +4,14 @@
 
 <script>
 export default {
-    name: 'triangle',
+    name: 'Triangle',
     props: {
    
     }
 }
 </script>
 
-<style scoped>
+<style>
  #triangle {
     width: 0;
     height: 0;

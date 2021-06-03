@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { Heart } from 'Heart.vue'
+import Heart from './Heart.vue'
 
 export default {
     name: 'hexagon',

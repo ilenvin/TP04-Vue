@@ -2,11 +2,12 @@
     <div id="root">
         <div>
             <h4>I'm the root component.</h4>
-            <Shape name="traingle" color="blue"/>
-            <Shape name="hexagone" color="yellow"/>
-            <Shape name="star" color="grey"/>
-            <Shape name="diamond" color="green"/>
-            <Shape name="heart" color="red"/>
+            <Shape name="traingle" color="pink"/>
+            <Shape name="hexagone" color="green"/>
+            <Shape name="star" color="yellow"/>
+            <Shape name="diamond" color="silver"/>
+            <Shape name="heart" color="purple"/>
+            
         </div>
     </div>
 </template>
@@ -31,9 +32,7 @@ export default {
 
 <style scoped>
 #root {
-    width: 80%;
-    height: 30em;
-   
+    width: 100%;
     border: 3px solid black;
     background-color: rgb(135, 185, 241);
 }

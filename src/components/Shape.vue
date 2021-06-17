@@ -7,9 +7,22 @@
 </template>
 
 <script>
+import Triangle from './Triangle.vue'
+import Diamond from './Diamond.vue'
+import Heart from './Heart.vue'
+import Star from './Star.vue'
+import Hexagone from './Hexagone.vue'
+
 export default {
     name: 'shape',
     props: ['name', 'color'],
+    components: {
+        Triangle,
+        Diamond,
+        Heart,
+        Star,
+        Hexagone,
+    }
 }
 </script>
 

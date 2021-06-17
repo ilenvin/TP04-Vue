@@ -1,26 +1,26 @@
 <template>
-    <div id="hexagon"><Heart></Heart></div>
+    <div id="hexagon" :style="{'--main-color':color}">
+        
+    </div>
 </template>
 
 <script>
-import Heart from './Heart.vue'
 
 export default {
     name: 'hexagon',
-    props: {
-   
-    },
-    components: {
-        Heart,
-    }
+    props: ['color'],
+
 }
 </script>
 
 <style scoped>
+:root {
+    --main-color:  rgb(101, 224, 101);
+}
 #hexagon {
     width: 100px;
     height: 57.735px;
-    background: rgb(118, 191, 240);
+    background: var(--main-color);
     position: relative;
 }
 #hexagon::before {
@@ -32,7 +32,7 @@ export default {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 28.8675px solid red;
+    border-bottom: 28.8675px solid var(--main-color);
 }
 #hexagon::after {
     content: "";
@@ -43,6 +43,6 @@ export default {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 28.8675px solid red;
+    border-top: 28.8675px solid var(--main-color);
 }
 </style>

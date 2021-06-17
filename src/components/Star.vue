@@ -1,31 +1,33 @@
 <template>
-    <div id="star"></div>
+    <div id="star" :style="{'--main-color':color}"></div>
 </template>
 
 <script>
 export default {
     name: 'star',
-    props: {
-   
-    }
+    props: ['color'],
 }
 </script>
 
 <style scoped>
+    :root {
+        --main-color: rgb(249, 252, 74);
+    }
+
     #star {
         margin: 50px 0;
         position: relative;
         display: block;
-        color: rgb(237, 240, 94);
+        color: var(--main-color);
         width: 0px;
         height: 0px;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid rgb(237, 240, 94);
+        border-bottom: 70px solid var(--main-color);
         border-left: 100px solid transparent;
         transform: rotate(35deg);
     }
     #star:before {
-        border-bottom: 80px solid rgb(237, 240, 94);
+        border-bottom: 80px solid var(--main-color);
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
         position: absolute;
@@ -40,13 +42,13 @@ export default {
     #star:after {
         position: absolute;
         display: block;
-        color: rgb(170, 175, 175);
+        color: var(--main-color);
         top: 3px;
         left: -105px;
         width: 0px;
         height: 0px;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid red;
+        border-bottom: 70px solid var(--main-color);
         border-left: 100px solid transparent;
         transform: rotate(-70deg);
         content: '';

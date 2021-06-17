@@ -1,34 +1,36 @@
 <template>
-    <div id="diamond"></div>
+    <div id="diamond" :style="{'--main-color':color}">
+    </div>
 </template>
 
 <script>
 export default {
     name: 'diamond',
-    props: {
-   
-    }
+    props: ['color'],
 }
 </script>
 
 <style scoped>
-    #diamond {
-        width: 0;
-        height: 0;
-        border: 50px solid transparent;
-        border-bottom-color: rgb(170, 175, 175);
-        position: relative;
-        top: -50px;
-    }
-    #diamond:after {
-        content: '';
-        position: absolute;
-        left: -50px;
-        top: 50px;
-        width: 0;
-        height: 0;
-        border: 50px solid transparent;
-        border-top-color: red;
-    }
+:root {
+    --main-color: rgb(28, 185, 247);
+}
+#diamond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid var(--main-color);
+    position: relative;
+    top: -50px;
+}
+#diamond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid var(--main-color);
+}
   
 </style>

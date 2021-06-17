@@ -1,17 +1,19 @@
 <template>
-    <div id="heart"></div>
+    <div id="heart" :style="{'--main-color':color}"></div>
 </template>
 
 <script>
 export default {
     name: 'heart',
-    props: {
-   
-    }
+    props: ['color'],
+
 }
 </script>
 
 <style scoped>
+    :root {
+        --main-color: rgb(247, 121, 198);
+        }
     #heart {
         position: relative;
         width: 100px;
@@ -25,7 +27,7 @@ export default {
         top: 0;
         width: 50px;
         height: 80px;
-        background: rgb(247, 121, 198);
+        background: var(--main-color);
         border-radius: 50px 50px 0 0;
         transform: rotate(-45deg);
         transform-origin: 0 100%;
